@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\.7cf425579ecb506acb52c04a0afd42c2c8953823-audit.json",
+    "files": [
+        {
+            "date": 1686182806831,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-08-06-06-error.log",
+            "hash": "1bfe88e0e3758a174d7d01146afdeccae9d3da60b4e1e04ee8cdea140a329c56"
+        },
+        {
+            "date": 1686204659297,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-08-06-12-error.log",
+            "hash": "0e86a5ec5b9c118301fbd9372da82cc684fd186d5ef304f0264cd4bc83791a78"
+        },
+        {
+            "date": 1686207716486,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-08-06-13-error.log",
+            "hash": "509e6121763ef538aed92e7d7585119a216c1b0c2572dbadfddab7a3d28ef1f1"
+        },
+        {
+            "date": 1686211498358,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-08-06-14-error.log",
+            "hash": "bb6fb44e6c8a3065f710aac25de1bf9743f54e998418868667f58052239fd12f"
+        },
+        {
+            "date": 1686233620174,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-08-06-20-error.log",
+            "hash": "f67580302d856c3f812d9daa355b0c40959c69ab0caa3fa531e863d9d99d6f11"
+        },
+        {
+            "date": 1686236423050,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-08-06-21-error.log",
+            "hash": "f321c21b2a2d0a476a6e2e3ab9de825578de88e7c15b477bc5db0c3f9260d2e2"
+        }
+    ],
+    "hashType": "sha256"
+}
