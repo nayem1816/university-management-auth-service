@@ -54,6 +54,16 @@
             "date": 1686409219857,
             "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-10-06-21-error.log",
             "hash": "0775a005e11afb69e82b726eeca2db123fe3b71837174234c591b536355a1616"
+        },
+        {
+            "date": 1686571706462,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-12-06-18-error.log",
+            "hash": "eccbab119c1141c24981ccf0a364bbb5760b0f1cd7ecfa0086398c7d97f73cd8"
+        },
+        {
+            "date": 1686574816956,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-12-06-19-error.log",
+            "hash": "10cae1f1f86d986003c07e8b0d763d51d5dfde859c1a83f153a642bec030885f"
         }
     ],
     "hashType": "sha256"

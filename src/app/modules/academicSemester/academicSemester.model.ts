@@ -1,17 +1,14 @@
-import mongoose from 'mongoose';
-import {
-  AcademicSemesterModel,
-  IAcademicSemester,
-} from './academicSemester.interface';
+import httpStatus from 'http-status';
+import { Schema, model } from 'mongoose';
+import ApiError from '../../../errors/ApiError';
 import {
   academicSemesterCodes,
-  academicSemesterMonths,
   academicSemesterTitles,
+  academicSemesterMonths,
 } from './academicSemester.constant';
-import status from 'http-status';
-import ApiError from '../../../errors/ApiError';
+import { IAcademicSemester } from './academicSemester.interface';
 
-const AcademicSemesterSchema = new mongoose.Schema<IAcademicSemester>(
+const academicSemesterSchema = new Schema<IAcademicSemester>(
   {
     title: {
       type: String,
@@ -43,19 +40,21 @@ const AcademicSemesterSchema = new mongoose.Schema<IAcademicSemester>(
   }
 );
 
-AcademicSemesterSchema.pre('save', async function (next) {
-  const isExit = await AcademicSemester.findOne({
-    code: this.code,
+academicSemesterSchema.pre('save', async function (next) {
+  const isExist = await AcademicSemester.findOne({
+    title: this.title,
     year: this.year,
   });
-
-  if (isExit) {
-    throw new ApiError(status.CONFLICT, 'This Semester title already exist');
+  if (isExist) {
+    throw new ApiError(
+      httpStatus.CONFLICT,
+      'Academic semester is already exist !'
+    );
   }
   next();
 });
 
-export const AcademicSemester = mongoose.model<
-  IAcademicSemester,
-  AcademicSemesterModel
->('AcademicSemester', AcademicSemesterSchema);
+export const AcademicSemester = model<IAcademicSemester>(
+  'AcademicSemester',
+  academicSemesterSchema
+);
