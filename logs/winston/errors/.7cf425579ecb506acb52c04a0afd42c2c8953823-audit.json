@@ -54,6 +54,26 @@
             "date": 1686409219857,
             "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-10-06-21-error.log",
             "hash": "0775a005e11afb69e82b726eeca2db123fe3b71837174234c591b536355a1616"
+        },
+        {
+            "date": 1686451850694,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-11-06-08-error.log",
+            "hash": "990958d79fb20c2417d195056c66cef5fd840e4be60b32d3fb32512363f45952"
+        },
+        {
+            "date": 1686453377416,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-11-06-09-error.log",
+            "hash": "0f6cd2c024f0cda544c6756e1e0df3fe873a5530a3d8581461ef8fdd03810e30"
+        },
+        {
+            "date": 1686481036242,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-11-06-16-error.log",
+            "hash": "b7b844b9e2e5c50e29f722a803b08cec8ebdb8e895330606e877d7b2adfe47ea"
+        },
+        {
+            "date": 1686481401872,
+            "name": "E:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\um-2023-11-06-17-error.log",
+            "hash": "eeb3eb1de2cad29a5ea4f88859cab413d1612315b90ed284e5e8d92ef18a6808"
         }
     ],
     "hashType": "sha256"
