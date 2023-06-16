@@ -1,5 +1,5 @@
 import cors from 'cors';
-import express, { Application } from 'express';
+import express, { Application, NextFunction, Request, Response } from 'express';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import routes from './app/routes';
 const app: Application = express();
@@ -21,5 +21,20 @@ app.use('/api/v1/', routes);
 
 //global error handler
 app.use(globalErrorHandler);
+
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(404).json({
+    success: false,
+    message: 'Page not found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'Page not found',
+      },
+    ],
+  });
+
+  next();
+});
 
 export default app;
