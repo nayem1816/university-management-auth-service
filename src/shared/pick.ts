@@ -1,3 +1,5 @@
+//['page','limit','sortBy','sortOrder']
+
 const pick = <T extends Record<string, unknown>, k extends keyof T>(
   obj: T,
   keys: k[]
@@ -9,7 +11,6 @@ const pick = <T extends Record<string, unknown>, k extends keyof T>(
       finalObj[key] = obj[key];
     }
   }
-
   return finalObj;
 };
 

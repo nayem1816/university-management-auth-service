@@ -5,7 +5,7 @@ import {
 } from './academicSemester.interface';
 
 export const academicSemesterTitles: IAcademicSemesterTitles[] = [
-  'Spring',
+  'Autumn',
   'Summer',
   'Fall',
 ];
@@ -16,7 +16,7 @@ export const academicSemesterCodes: IAcademicSemesterCodes[] = [
   '03',
 ];
 
-export const academicSemesterMonths: IAcademicSemesterMonths[] = [
+export const acdemicSemesterMonths: IAcademicSemesterMonths[] = [
   'January',
   'February',
   'March',
@@ -34,7 +34,7 @@ export const academicSemesterMonths: IAcademicSemesterMonths[] = [
 export const academicSemesterTitleCodeMapper: {
   [key: string]: string;
 } = {
-  Spring: '01',
+  Autumn: '01',
   Summer: '02',
   Fall: '03',
 };
