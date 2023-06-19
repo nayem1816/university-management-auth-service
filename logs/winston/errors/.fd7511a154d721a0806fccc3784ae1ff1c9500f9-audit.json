@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\.fd7511a154d721a0806fccc3784ae1ff1c9500f9-audit.json",
+    "files": [
+        {
+            "date": 1687090049766,
+            "name": "F:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-18-06-18-error.log",
+            "hash": "fbbe2a75baf63ab1441f7c302e9ddc4dda42871cec49099ea33233e63425d686"
+        },
+        {
+            "date": 1687102126101,
+            "name": "F:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-18-06-21-error.log",
+            "hash": "98105cb7bdb895596208877a98e1df110c7daabcdb4c94a89082e0e0e6d3daf0"
+        },
+        {
+            "date": 1687138343336,
+            "name": "F:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-19-06-07-error.log",
+            "hash": "e40be4c2a20936e8df5529624edd664ac77cb5e2fb1579322b8b6620dffd2e75"
+        },
+        {
+            "date": 1687140034276,
+            "name": "F:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-19-06-08-error.log",
+            "hash": "7b83133d4e287bb101da8e53ddbba1a8595cc6b4f4b2dc7662fce8d63a2bbd5c"
+        },
+        {
+            "date": 1687144129926,
+            "name": "F:\\NEXT LEVEL WEV DEVELOPMENT 2\\University Management Project\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-19-06-09-error.log",
+            "hash": "33aa807887d25587c9b7554bfe9ea7dfd015388c938d4f65b75fe51ce2f4f24e"
+        }
+    ],
+    "hashType": "sha256"
+}
