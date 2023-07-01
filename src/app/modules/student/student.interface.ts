@@ -1,16 +1,15 @@
 import { Model, Types } from 'mongoose';
-import { IBloodGroup, IGender } from '../../../interfaces/common';
-import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 import { IAcademicDepartment } from '../academicDepartment/academicDepartment.interfaces';
 import { IAcademicFaculty } from '../academicFaculty/academicFaculty.interfaces';
+import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 
-export type INameType = {
+export type UserName = {
   firstName: string;
-  middleName: string;
   lastName: string;
+  middleName: string;
 };
 
-export type IGuardian = {
+export type Guardian = {
   fatherName: string;
   fatherOccupation: string;
   fatherContactNo: string;
@@ -20,7 +19,7 @@ export type IGuardian = {
   address: string;
 };
 
-export type ILocalGuardian = {
+export type LocalGuardian = {
   name: string;
   occupation: string;
   contactNo: string;
@@ -29,21 +28,21 @@ export type ILocalGuardian = {
 
 export type IStudent = {
   id: string;
-  name: INameType;
-  gender: IGender;
+  name: UserName; //embedded object
+  gender: 'male' | 'female';
   dateOfBirth: string;
   email: string;
   contactNo: string;
   emergencyContactNo: string;
+  bloodGroup?: 'A+' | 'A-' | 'B+' | 'B-' | 'AB+' | 'AB-' | 'O+' | 'O-';
   presentAddress: string;
   permanentAddress: string;
-  bloodGroup?: IBloodGroup;
-  guardian: IGuardian;
-  localGuardian: ILocalGuardian;
+  guardian: Guardian; // embedded object
+  localGuardian: LocalGuardian; // embedded object
+  academicFaculty: Types.ObjectId | IAcademicFaculty; // reference _id
+  academicDepartment: Types.ObjectId | IAcademicDepartment; // reference _id
+  academicSemester: Types.ObjectId | IAcademicSemester; // reference _id
   profileImage?: string;
-  academicSemester: Types.ObjectId | IAcademicSemester;
-  academicDepartment: Types.ObjectId | IAcademicDepartment;
-  academicFaculty: Types.ObjectId | IAcademicFaculty;
 };
 
 export type StudentModel = Model<IStudent, Record<string, unknown>>;
@@ -51,7 +50,7 @@ export type StudentModel = Model<IStudent, Record<string, unknown>>;
 export type IStudentFilters = {
   searchTerm?: string;
   id?: string;
-  bloodGroup?: IBloodGroup;
+  bloodGroup?: string;
   email?: string;
   contactNo?: string;
   emergencyContactNo?: string;
